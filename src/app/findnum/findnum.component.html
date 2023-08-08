@@ -1,0 +1,11 @@
+<div>
+    <label for="indexInput">Enter an index:</label>
+    <input type="number" class="form-control" id="indexInput" [(ngModel)]="inputIndex">
+    <button (click)="findMissingNumber()" class="btn btn-secondary">Find Number</button>
+  </div>
+  
+  <div>
+    <p>Please note that index are starting from 0</p>
+    <p *ngIf="result !== null">Number at index {{ inputIndex }} is {{ result }}.</p>
+    <p *ngIf="result === null">Invalid index entered.</p>
+  </div>

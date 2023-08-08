@@ -1,0 +1,8 @@
+<div>
+    <label>This is component X</label>
+    <input type="text" class="form-control" [(ngModel)]="tabName">
+    <button class="btn" (click)="addYComponent()">+</button>
+  </div>
+  <div *ngFor="let yData of yComponentsData">
+    <app-y (textSaved)="onTextSaved($event)"></app-y>
+  </div>

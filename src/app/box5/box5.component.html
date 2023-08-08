@@ -1,0 +1,4 @@
+<p>box5 works!</p>
+<label>Add Text Here</label>
+<input [(ngModel)]="sharedService.boxText" (change)="updateSharedText($event)" />
+<p> {{ sharedService.boxText }}</p>
